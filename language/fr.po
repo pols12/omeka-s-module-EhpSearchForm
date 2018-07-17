@@ -1,0 +1,174 @@
+# Translation template for module EhpSearchForm.
+# Copyright (C) 2018 Archives Henri Poincaré
+# This file is distributed under the same license as the EhpSearchForm package.
+# Paul Sarrassat <paul.sarrassat@gmail.com>, 2018.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-24 17:35+0200\n"
+"PO-Revision-Date: 2018-06-24 18:00+0200\n"
+"Last-Translator: Paul Sarrassat <paul.sarrassat@gmail.com>\n"
+"Language-Team: French\n"
+"Language: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: view/ehp-search-form/biblio-form.phtml:21
+msgid "Publication search"
+msgstr "Recherche de publications"
+
+#: view/ehp-search-form/biblio-form.phtml:50
+#: view/ehp-search-form/letter-form.phtml:47
+msgid "Reset all filters"
+msgstr "Effacer tous les filtres"
+
+#: view/ehp-search-form/biblio-form.phtml:56
+#: view/ehp-search-form/biblio-form.phtml:74
+#: view/ehp-search-form/letter-form.phtml:53
+#: view/ehp-search-form/letter-form.phtml:71
+msgid "Hide advanced search"
+msgstr "Cacher la recherche avancée"
+
+#: view/ehp-search-form/biblio-form.phtml:75
+#: view/ehp-search-form/letter-form.phtml:72
+msgid "Show advanced search"
+msgstr "Montrer la recherche avancée"
+
+#: view/ehp-search-form/letter-form.phtml:21
+msgid "Letter search"
+msgstr "Recherche de lettres"
+
+#: src/Form/LetterForm.php:29 src/Form/BiblioForm.php:34
+msgid "Search for…"
+msgstr "Recherche de…"
+
+#: src/Form/LetterForm.php:74 src/Form/BiblioForm.php:81
+msgid "Date interval"
+msgstr "Intervalle de dates"
+
+#: src/Form/LetterForm.php:80
+msgid "Written after"
+msgstr "Écrites après le"
+
+#: src/Form/LetterForm.php:83 src/Form/LetterForm.php:94
+#: src/Form/BiblioForm.php:90 src/Form/BiblioForm.php:101
+msgid "YYYY-MM-DD"
+msgstr "AAAA-MM-JJ"
+
+#: src/Form/LetterForm.php:91
+msgid "Written before"
+msgstr "Écrites avant le"
+
+#: src/Form/LetterForm.php:111 src/Form/BiblioForm.php:118
+msgid "Filters"
+msgstr "Filtres"
+
+#: src/Form/LetterForm.php:131
+msgid "Name of Poincaré’s penpal"
+msgstr "Nom du correspondant de Poincaré"
+
+#: src/Form/LetterForm.php:134
+msgid "Penpal"
+msgstr "Correspondant"
+
+#: src/Form/BiblioFormConfigFieldset.php:62
+#: src/Form/LetterFormConfigFieldset.php:54
+msgid "Date range field"
+msgstr "Champ contenant les dates"
+
+#: src/Form/BiblioFormConfigFieldset.php:77
+#: src/Form/BiblioFormConfigFieldset.php:200
+#: src/Form/LetterFormConfigFieldset.php:69
+#: src/Form/LetterFormConfigFieldset.php:189
+msgid "Select an item set"
+msgstr "Choisissez une collection"
+
+#: src/Form/BiblioFormConfigFieldset.php:81
+msgid "Journals item set"
+msgstr "Collection contenant les revues scientifiques"
+
+#: src/Form/BiblioFormConfigFieldset.php:82
+msgid "Item set which contains journals in which Poincaré has published"
+msgstr "Collection qui contient les revues scientfiquats dans lesquelles Poincaré a publié."
+
+#: src/Form/BiblioFormConfigFieldset.php:101
+#: src/Form/LetterFormConfigFieldset.php:90
+msgid "Advanced search fields"
+msgstr "Champs de la recherche avancée"
+
+#: src/Form/BiblioFormConfigFieldset.php:126
+#: src/Form/LetterFormConfigFieldset.php:115
+msgid "Enabled"
+msgstr "Activé"
+
+#: src/Form/BiblioFormConfigFieldset.php:204
+msgid "Publications item set"
+msgstr "Collection contenant les publications"
+
+#: src/Form/BiblioFormConfigFieldset.php:205
+msgid "Item set which contains texts written by Poincaré"
+msgstr "Collection qui contient les textes écrits par Poincaré."
+
+#: src/Form/BiblioFormConfigFieldset.php:225
+#: src/Form/LetterFormConfigFieldset.php:213
+msgid "Item set id field"
+msgstr "Champ contenant les Id des collections"
+
+#: src/Form/BiblioFormConfigFieldset.php:246
+msgid "Searchable document types"
+msgstr "Types de documents recherchables"
+
+#: src/Form/BiblioFormConfigFieldset.php:247
+msgid "Possible resource classes for searched items."
+msgstr "Classes RDF possibles pour les contenues recherchés."
+
+#: src/Form/BiblioFormConfigFieldset.php:253
+msgid "Select resource classes"
+msgstr "Choisissez des classes RDF"
+
+#: src/Form/BiblioFormConfigFieldset.php:264
+msgid "Resource class field"
+msgstr "Champ classe RDF"
+
+#: src/Form/BiblioForm.php:87
+msgid "Published after"
+msgstr "Publiés après le"
+
+#: src/Form/BiblioForm.php:98
+msgid "Published before"
+msgstr "Publiés avant le"
+
+#: src/Form/BiblioForm.php:144 src/Form/BiblioForm.php:147
+msgid "Document type"
+msgstr "Type de document"
+
+#: src/Form/BiblioForm.php:167
+msgid "Journal name"
+msgstr "Nom de la revue"
+
+#: src/Form/BiblioForm.php:170
+msgid "Published in"
+msgstr "Publié dans"
+
+#: src/Form/LetterFormConfigFieldset.php:72
+msgid "Penpals item set"
+msgstr "Collection contenant les correspondants"
+
+#: src/Form/LetterFormConfigFieldset.php:73
+msgid "Item set which contains Poincaré’s penpals"
+msgstr "Collection qui contient les correspondants de Poincaré"
+
+#: src/Form/LetterFormConfigFieldset.php:192
+msgid "Letters item set"
+msgstr "Collection contenant les lettres"
+
+#: src/Form/LetterFormConfigFieldset.php:193
+msgid "Item set which contains letters sent to/by Poincaré"
+msgstr "Collection qui contient les lettres envoyées à/par Poincaré"
+
+#~ msgid "Query"
+#~ msgstr "Requête"

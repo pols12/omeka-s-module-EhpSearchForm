@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-24 17:35+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: view/ehp-search-form/biblio-form.phtml:21
+msgid "Publication search"
+msgstr ""
+
+#: view/ehp-search-form/biblio-form.phtml:50
+#: view/ehp-search-form/letter-form.phtml:47
+msgid "Reset all filters"
+msgstr ""
+
+#: view/ehp-search-form/biblio-form.phtml:56
+#: view/ehp-search-form/biblio-form.phtml:74
+#: view/ehp-search-form/letter-form.phtml:53
+#: view/ehp-search-form/letter-form.phtml:71
+msgid "Hide advanced search"
+msgstr ""
+
+#: view/ehp-search-form/biblio-form.phtml:75
+#: view/ehp-search-form/letter-form.phtml:72
+msgid "Show advanced search"
+msgstr ""
+
+#: view/ehp-search-form/letter-form.phtml:21
+msgid "Letter search"
+msgstr ""
+
+#: src/Form/LetterForm.php:29 src/Form/BiblioForm.php:34
+msgid "Search for…"
+msgstr ""
+
+#: src/Form/LetterForm.php:74 src/Form/BiblioForm.php:81
+msgid "Date interval"
+msgstr ""
+
+#: src/Form/LetterForm.php:80
+msgid "Written after"
+msgstr ""
+
+#: src/Form/LetterForm.php:83 src/Form/LetterForm.php:94
+#: src/Form/BiblioForm.php:90 src/Form/BiblioForm.php:101
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: src/Form/LetterForm.php:91
+msgid "Written before"
+msgstr ""
+
+#: src/Form/LetterForm.php:111 src/Form/BiblioForm.php:118
+msgid "Filters"
+msgstr ""
+
+#: src/Form/LetterForm.php:131
+msgid "Name of Poincaré’s penpal"
+msgstr ""
+
+#: src/Form/LetterForm.php:134
+msgid "Penpal"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:62
+#: src/Form/LetterFormConfigFieldset.php:54
+msgid "Date range field"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:77
+#: src/Form/BiblioFormConfigFieldset.php:200
+#: src/Form/LetterFormConfigFieldset.php:69
+#: src/Form/LetterFormConfigFieldset.php:189
+msgid "Select an item set"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:81
+msgid "Journals item set"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:82
+msgid "Item set which contains journals in which Poincaré has published"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:101
+#: src/Form/LetterFormConfigFieldset.php:90
+msgid "Advanced search fields"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:126
+#: src/Form/LetterFormConfigFieldset.php:115
+msgid "Enabled"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:204
+msgid "Publications item set"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:205
+msgid "Item set which contains texts written by Poincaré"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:225
+#: src/Form/LetterFormConfigFieldset.php:213
+msgid "Item set id field"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:246
+msgid "Searchable document types"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:247
+msgid "Possible resource classes for searched items."
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:253
+msgid "Select resource classes"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:264
+msgid "Resource class field"
+msgstr ""
+
+#: src/Form/BiblioForm.php:87
+msgid "Published after"
+msgstr ""
+
+#: src/Form/BiblioForm.php:98
+msgid "Published before"
+msgstr ""
+
+#: src/Form/BiblioForm.php:144 src/Form/BiblioForm.php:147
+msgid "Document type"
+msgstr ""
+
+#: src/Form/BiblioForm.php:167
+msgid "Journal name"
+msgstr ""
+
+#: src/Form/BiblioForm.php:170
+msgid "Published in"
+msgstr ""
+
+#: src/Form/LetterFormConfigFieldset.php:72
+msgid "Penpals item set"
+msgstr ""
+
+#: src/Form/LetterFormConfigFieldset.php:73
+msgid "Item set which contains Poincaré’s penpals"
+msgstr ""
+
+#: src/Form/LetterFormConfigFieldset.php:192
+msgid "Letters item set"
+msgstr ""
+
+#: src/Form/LetterFormConfigFieldset.php:193
+msgid "Item set which contains letters sent to/by Poincaré"
+msgstr ""

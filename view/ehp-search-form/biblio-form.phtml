@@ -1,0 +1,109 @@
+<?php
+$this->headScript()->appendFile($this->assetUrl('jquery-ui.min.js', 'jQueryUI'));
+$this->headLink()->appendStylesheet($this->assetUrl('jquery-ui.min.css', 'jQueryUI'));
+$this->headLink()->appendStylesheet($this->assetUrl('css/search-form.css', 'EhpSearchForm'));
+$this->headScript()->appendFile($this->assetUrl('vendor/chosen-js/chosen.jquery.js', 'Omeka'));
+$this->headLink()->appendStylesheet($this->assetUrl('vendor/chosen-js/chosen.css', 'Omeka'));
+$this->headScript()->appendScript('$(document).ready(function () {
+		$("#ehp-search-form-date input").datepicker({
+			dateFormat: $.datepicker.W3C,
+			defaultDate: "1872-01-01",
+			changeYear: true, yearRange: "1862:1915" });
+		$(".chosen-select").chosen({allow_single_deselect: true, search_contains: true});
+	});',
+		'text/javascript');
+
+function resetBtn($fieldset){
+	return "<button type='button' class='reset-fieldset fa fa-times-circle' data-fieldset='$fieldset'></button>";
+}
+
+$form->prepare(); ?>
+<h2><?= $this->translate('Publication search') ?></h2>
+<?= $this->form()->openTag($form); ?>
+<div id="biblio-search-form">
+	<div id="ehp-search-form-query" class='ehp-fieldset'>
+		<?= $this->formRow($form->get('q')) ?>
+	</div>
+	<div id="ehp-search-form-date" class='ehp-fieldset'>
+		<div class="field">
+			<?= $this->formLabel($form->get('date')) ?>
+			<div class="field"><?= $this->formCollection($form->get('date'), false)
+			//resetbtn('date') ?> </div>
+		</div>
+	</div>
+	<div id="ehp-search-form-type" class='ehp-fieldset'>
+		<?= $this->formRow($form->get('type')) ?>
+	</div>
+	<div id="ehp-search-form-journal" class='ehp-fieldset'>
+		<?= $this->formRow($form->get('journal')) ?>
+	</div>
+	<div id="ehp-search-form-filters" class='ehp-fieldset'>
+		<div class="field">
+			<label><?= $this->translate($form->get('filters')->getOption('manual_label')) ?></label>
+			<div class="filters">
+				<?= $this->formCollection($form->get('filters'), true) ?>
+				<button type="button" id="add-filter">
+					<span class="fa fa-plus"></span>
+				</button>
+				<button type='button' class='reset-fieldset' data-fieldset='filters'>
+					<span class="fa fa-times-circle"></span>
+					<?= $this->translate('Reset all filters') ?>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="ehp-search-form-toggle"><a id="advanced-toggle" class="fa fa-minus-square"> 
+		<?= $this->translate('Hide advanced search') ?></a></div>
+	<div class="submit"><input type="submit" value="<?= $this->translate('Search'); ?>"/></div>
+</div>
+
+<?php echo $this->form()->closeTag(); ?>
+
+<script>
+$(document).ready(function() {
+	//Add filter button
+	$('#add-filter').on('click', function() {
+		var filters = $('#add-filter').parent().children(':first'); //global fieldset
+		var count = filters.children('.filter').length;
+		var template = filters.children('span').attr('data-template');
+		template = template.replace(/__index__/g, count);
+		filters.append(template);
+	});
+});
+
+var hide_text=' <?= $this->translate('Hide advanced search') ?>';
+var show_text=' <?= $this->translate('Show advanced search') ?>';
+var is_hidden = true;
+function toggleAdvancedSearch() {
+	if(is_hidden) $(this).text(show_text).toggleClass('fa-minus-square fa-plus-square');
+	else $(this).text(hide_text).toggleClass('fa-minus-square fa-plus-square');
+	$('.ehp-fieldset').slice(1).toggle();
+	is_hidden = !is_hidden;
+}
+
+/**
+ * Reset all inputs of a div. The div id must begin as 'ehp-search-form-'
+ * @param {string} fieldsetName End of div id which contains input to reset.
+ */
+function reset(fieldsetName) {
+	$('#ehp-search-form-'+fieldsetName+' input').val('').change();
+	if(fieldsetName==='filters') {
+		$('#ehp-search-form-filters input').parents('.filter').slice(2).remove();
+		$('#ehp-search-form-filters select').each(function() {
+			this.selectedIndex = 0;
+		});
+	}
+}
+
+$(document).ready(function() {
+	// Reset buttons
+	$('#ehp-search-form').find('button.reset-fieldset').on('click', function(e) {
+		e.preventDefault();
+		var name = $(this).attr('data-fieldset');
+		reset(name);
+	});
+	
+	//Hide/Show advanced search link
+	$('#advanced-toggle').on('click', toggleAdvancedSearch).trigger('click');
+});
+</script>
