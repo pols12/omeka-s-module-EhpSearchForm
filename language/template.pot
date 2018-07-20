@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-24 17:35+0200\n"
+"POT-Creation-Date: 2018-07-17 18:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,57 +80,65 @@ msgstr ""
 msgid "Date range field"
 msgstr ""
 
-#: src/Form/BiblioFormConfigFieldset.php:77
-#: src/Form/BiblioFormConfigFieldset.php:200
+#: src/Form/BiblioFormConfigFieldset.php:79
+#: src/Form/LetterFormConfigFieldset.php:90
+msgid "Advanced search fields"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:104
+#: src/Form/LetterFormConfigFieldset.php:115
+msgid "Enabled"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:178
+#: src/Form/BiblioFormConfigFieldset.php:241
 #: src/Form/LetterFormConfigFieldset.php:69
 #: src/Form/LetterFormConfigFieldset.php:189
 msgid "Select an item set"
 msgstr ""
 
-#: src/Form/BiblioFormConfigFieldset.php:81
-msgid "Journals item set"
-msgstr ""
-
-#: src/Form/BiblioFormConfigFieldset.php:82
-msgid "Item set which contains journals in which Poincaré has published"
-msgstr ""
-
-#: src/Form/BiblioFormConfigFieldset.php:101
-#: src/Form/LetterFormConfigFieldset.php:90
-msgid "Advanced search fields"
-msgstr ""
-
-#: src/Form/BiblioFormConfigFieldset.php:126
-#: src/Form/LetterFormConfigFieldset.php:115
-msgid "Enabled"
-msgstr ""
-
-#: src/Form/BiblioFormConfigFieldset.php:204
+#: src/Form/BiblioFormConfigFieldset.php:182
 msgid "Publications item set"
 msgstr ""
 
-#: src/Form/BiblioFormConfigFieldset.php:205
+#: src/Form/BiblioFormConfigFieldset.php:183
 msgid "Item set which contains texts written by Poincaré"
 msgstr ""
 
-#: src/Form/BiblioFormConfigFieldset.php:225
+#: src/Form/BiblioFormConfigFieldset.php:202
 #: src/Form/LetterFormConfigFieldset.php:213
 msgid "Item set id field"
 msgstr ""
 
+#: src/Form/BiblioFormConfigFieldset.php:225
+msgid "Journal id field"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:226
+msgid "Field which index Journal’s id from Article items."
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:245
+msgid "Journals item set"
+msgstr ""
+
 #: src/Form/BiblioFormConfigFieldset.php:246
+msgid "Item set which contains journals in which Poincaré has published"
+msgstr ""
+
+#: src/Form/BiblioFormConfigFieldset.php:272
 msgid "Searchable document types"
 msgstr ""
 
-#: src/Form/BiblioFormConfigFieldset.php:247
+#: src/Form/BiblioFormConfigFieldset.php:273
 msgid "Possible resource classes for searched items."
 msgstr ""
 
-#: src/Form/BiblioFormConfigFieldset.php:253
+#: src/Form/BiblioFormConfigFieldset.php:279
 msgid "Select resource classes"
 msgstr ""
 
-#: src/Form/BiblioFormConfigFieldset.php:264
+#: src/Form/BiblioFormConfigFieldset.php:290
 msgid "Resource class field"
 msgstr ""
 
