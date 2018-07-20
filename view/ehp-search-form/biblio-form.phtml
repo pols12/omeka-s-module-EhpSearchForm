@@ -10,6 +10,13 @@ $this->headScript()->appendScript('$(document).ready(function () {
 			defaultDate: "1872-01-01",
 			changeYear: true, yearRange: "1862:1915" });
 		$(".chosen-select").chosen({allow_single_deselect: true, search_contains: true});
+		$("select[name=type]").change(function(){
+			var publishedInDiv = $("select[name=journal]").parent().parent().parent();
+			if(this.value.indexOf("Book") != -1)
+				publishedInDiv.hide();
+			else
+				publishedInDiv.show();
+		});
 	});',
 		'text/javascript');
 
