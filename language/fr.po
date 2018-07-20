@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 18:16+0200\n"
-"PO-Revision-Date: 2018-06-24 18:00+0200\n"
+"POT-Creation-Date: 2018-07-20 12:36+0200\n"
+"PO-Revision-Date: 2018-07-20 12:38+0200\n"
 "Last-Translator: Paul Sarrassat <paul.sarrassat@gmail.com>\n"
 "Language-Team: French\n"
 "Language: French\n"
@@ -17,24 +17,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: view/ehp-search-form/biblio-form.phtml:21
+#: view/ehp-search-form/biblio-form.phtml:28
 msgid "Publication search"
 msgstr "Recherche de publications"
 
-#: view/ehp-search-form/biblio-form.phtml:50
+#: view/ehp-search-form/biblio-form.phtml:57
 #: view/ehp-search-form/letter-form.phtml:47
+#: view/ehp-search-form/report-form.phtml:39
 msgid "Reset all filters"
 msgstr "Effacer tous les filtres"
 
-#: view/ehp-search-form/biblio-form.phtml:56
-#: view/ehp-search-form/biblio-form.phtml:74
+#: view/ehp-search-form/biblio-form.phtml:63
+#: view/ehp-search-form/biblio-form.phtml:81
 #: view/ehp-search-form/letter-form.phtml:53
 #: view/ehp-search-form/letter-form.phtml:71
+#: view/ehp-search-form/report-form.phtml:45
+#: view/ehp-search-form/report-form.phtml:63
 msgid "Hide advanced search"
 msgstr "Cacher la recherche avancée"
 
-#: view/ehp-search-form/biblio-form.phtml:75
+#: view/ehp-search-form/biblio-form.phtml:82
 #: view/ehp-search-form/letter-form.phtml:72
+#: view/ehp-search-form/report-form.phtml:64
 msgid "Show advanced search"
 msgstr "Montrer la recherche avancée"
 
@@ -42,11 +46,17 @@ msgstr "Montrer la recherche avancée"
 msgid "Letter search"
 msgstr "Recherche de lettres"
 
-#: src/Form/LetterForm.php:29 src/Form/BiblioForm.php:34
+#: view/ehp-search-form/report-form.phtml:16
+msgid "Reports and dissertations"
+msgstr ""
+
+#: src/Form/LetterForm.php:29 src/Form/ReportForm.php:30
+#: src/Form/BiblioForm.php:34
 msgid "Search for…"
 msgstr "Recherche de…"
 
-#: src/Form/LetterForm.php:74 src/Form/BiblioForm.php:81
+#: src/Form/LetterForm.php:74 src/Form/ReportForm.php:68
+#: src/Form/BiblioForm.php:81
 msgid "Date interval"
 msgstr "Intervalle de dates"
 
@@ -55,6 +65,7 @@ msgid "Written after"
 msgstr "Écrites après le"
 
 #: src/Form/LetterForm.php:83 src/Form/LetterForm.php:94
+#: src/Form/ReportForm.php:77 src/Form/ReportForm.php:88
 #: src/Form/BiblioForm.php:90 src/Form/BiblioForm.php:101
 msgid "YYYY-MM-DD"
 msgstr "AAAA-MM-JJ"
@@ -63,7 +74,8 @@ msgstr "AAAA-MM-JJ"
 msgid "Written before"
 msgstr "Écrites avant le"
 
-#: src/Form/LetterForm.php:111 src/Form/BiblioForm.php:118
+#: src/Form/LetterForm.php:111 src/Form/ReportForm.php:105
+#: src/Form/BiblioForm.php:118
 msgid "Filters"
 msgstr "Filtres"
 
@@ -75,27 +87,53 @@ msgstr "Nom du correspondant de Poincaré"
 msgid "Penpal"
 msgstr "Correspondant"
 
+#: src/Form/ReportFormConfigFieldset.php:54
 #: src/Form/BiblioFormConfigFieldset.php:62
 #: src/Form/LetterFormConfigFieldset.php:54
 msgid "Date range field"
 msgstr "Champ contenant les dates"
 
+#: src/Form/ReportFormConfigFieldset.php:67
 #: src/Form/BiblioFormConfigFieldset.php:79
 #: src/Form/LetterFormConfigFieldset.php:90
 msgid "Advanced search fields"
 msgstr "Champs de la recherche avancée"
 
+#: src/Form/ReportFormConfigFieldset.php:92
 #: src/Form/BiblioFormConfigFieldset.php:104
 #: src/Form/LetterFormConfigFieldset.php:115
 msgid "Enabled"
 msgstr "Activé"
 
+#: src/Form/ReportFormConfigFieldset.php:166
 #: src/Form/BiblioFormConfigFieldset.php:178
 #: src/Form/BiblioFormConfigFieldset.php:241
 #: src/Form/LetterFormConfigFieldset.php:69
 #: src/Form/LetterFormConfigFieldset.php:189
 msgid "Select an item set"
 msgstr "Choisissez une collection"
+
+#: src/Form/ReportFormConfigFieldset.php:170
+msgid "Report & dissertation item set"
+msgstr "Collection des Rapports et mémoires"
+
+#: src/Form/ReportFormConfigFieldset.php:171
+msgid "Item set which contains reports and dissertations by Poincaré."
+msgstr "Collection qui contient les rapports et mémoires écrits par Poincaré."
+
+#: src/Form/ReportFormConfigFieldset.php:190
+#: src/Form/BiblioFormConfigFieldset.php:202
+#: src/Form/LetterFormConfigFieldset.php:213
+msgid "Item set id field"
+msgstr "Champ contenant les Id des collections"
+
+#: src/Form/ReportForm.php:74 src/Form/BiblioForm.php:87
+msgid "Published after"
+msgstr "Publiés après le"
+
+#: src/Form/ReportForm.php:85 src/Form/BiblioForm.php:98
+msgid "Published before"
+msgstr "Publiés avant le"
 
 #: src/Form/BiblioFormConfigFieldset.php:182
 msgid "Publications item set"
@@ -104,11 +142,6 @@ msgstr "Collection contenant les publications"
 #: src/Form/BiblioFormConfigFieldset.php:183
 msgid "Item set which contains texts written by Poincaré"
 msgstr "Collection qui contient les textes écrits par Poincaré."
-
-#: src/Form/BiblioFormConfigFieldset.php:202
-#: src/Form/LetterFormConfigFieldset.php:213
-msgid "Item set id field"
-msgstr "Champ contenant les Id des collections"
 
 #: src/Form/BiblioFormConfigFieldset.php:225
 msgid "Journal id field"
@@ -143,14 +176,6 @@ msgstr "Choisissez des classes RDF"
 #: src/Form/BiblioFormConfigFieldset.php:290
 msgid "Resource class field"
 msgstr "Champ classe RDF"
-
-#: src/Form/BiblioForm.php:87
-msgid "Published after"
-msgstr "Publiés après le"
-
-#: src/Form/BiblioForm.php:98
-msgid "Published before"
-msgstr "Publiés avant le"
 
 #: src/Form/BiblioForm.php:144 src/Form/BiblioForm.php:147
 msgid "Document type"

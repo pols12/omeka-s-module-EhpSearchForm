@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-17 18:16+0200\n"
+"POT-Creation-Date: 2018-07-20 12:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,24 +17,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: view/ehp-search-form/biblio-form.phtml:21
+#: view/ehp-search-form/biblio-form.phtml:28
 msgid "Publication search"
 msgstr ""
 
-#: view/ehp-search-form/biblio-form.phtml:50
+#: view/ehp-search-form/biblio-form.phtml:57
 #: view/ehp-search-form/letter-form.phtml:47
+#: view/ehp-search-form/report-form.phtml:39
 msgid "Reset all filters"
 msgstr ""
 
-#: view/ehp-search-form/biblio-form.phtml:56
-#: view/ehp-search-form/biblio-form.phtml:74
+#: view/ehp-search-form/biblio-form.phtml:63
+#: view/ehp-search-form/biblio-form.phtml:81
 #: view/ehp-search-form/letter-form.phtml:53
 #: view/ehp-search-form/letter-form.phtml:71
+#: view/ehp-search-form/report-form.phtml:45
+#: view/ehp-search-form/report-form.phtml:63
 msgid "Hide advanced search"
 msgstr ""
 
-#: view/ehp-search-form/biblio-form.phtml:75
+#: view/ehp-search-form/biblio-form.phtml:82
 #: view/ehp-search-form/letter-form.phtml:72
+#: view/ehp-search-form/report-form.phtml:64
 msgid "Show advanced search"
 msgstr ""
 
@@ -42,11 +46,17 @@ msgstr ""
 msgid "Letter search"
 msgstr ""
 
-#: src/Form/LetterForm.php:29 src/Form/BiblioForm.php:34
+#: view/ehp-search-form/report-form.phtml:16
+msgid "Reports and dissertations"
+msgstr ""
+
+#: src/Form/LetterForm.php:29 src/Form/ReportForm.php:30
+#: src/Form/BiblioForm.php:34
 msgid "Search for…"
 msgstr ""
 
-#: src/Form/LetterForm.php:74 src/Form/BiblioForm.php:81
+#: src/Form/LetterForm.php:74 src/Form/ReportForm.php:68
+#: src/Form/BiblioForm.php:81
 msgid "Date interval"
 msgstr ""
 
@@ -55,6 +65,7 @@ msgid "Written after"
 msgstr ""
 
 #: src/Form/LetterForm.php:83 src/Form/LetterForm.php:94
+#: src/Form/ReportForm.php:77 src/Form/ReportForm.php:88
 #: src/Form/BiblioForm.php:90 src/Form/BiblioForm.php:101
 msgid "YYYY-MM-DD"
 msgstr ""
@@ -63,7 +74,8 @@ msgstr ""
 msgid "Written before"
 msgstr ""
 
-#: src/Form/LetterForm.php:111 src/Form/BiblioForm.php:118
+#: src/Form/LetterForm.php:111 src/Form/ReportForm.php:105
+#: src/Form/BiblioForm.php:118
 msgid "Filters"
 msgstr ""
 
@@ -75,26 +87,52 @@ msgstr ""
 msgid "Penpal"
 msgstr ""
 
+#: src/Form/ReportFormConfigFieldset.php:54
 #: src/Form/BiblioFormConfigFieldset.php:62
 #: src/Form/LetterFormConfigFieldset.php:54
 msgid "Date range field"
 msgstr ""
 
+#: src/Form/ReportFormConfigFieldset.php:67
 #: src/Form/BiblioFormConfigFieldset.php:79
 #: src/Form/LetterFormConfigFieldset.php:90
 msgid "Advanced search fields"
 msgstr ""
 
+#: src/Form/ReportFormConfigFieldset.php:92
 #: src/Form/BiblioFormConfigFieldset.php:104
 #: src/Form/LetterFormConfigFieldset.php:115
 msgid "Enabled"
 msgstr ""
 
+#: src/Form/ReportFormConfigFieldset.php:166
 #: src/Form/BiblioFormConfigFieldset.php:178
 #: src/Form/BiblioFormConfigFieldset.php:241
 #: src/Form/LetterFormConfigFieldset.php:69
 #: src/Form/LetterFormConfigFieldset.php:189
 msgid "Select an item set"
+msgstr ""
+
+#: src/Form/ReportFormConfigFieldset.php:170
+msgid "Report & dissertation item set"
+msgstr ""
+
+#: src/Form/ReportFormConfigFieldset.php:171
+msgid "Item set which contains reports and dissertations by Poincaré."
+msgstr ""
+
+#: src/Form/ReportFormConfigFieldset.php:190
+#: src/Form/BiblioFormConfigFieldset.php:202
+#: src/Form/LetterFormConfigFieldset.php:213
+msgid "Item set id field"
+msgstr ""
+
+#: src/Form/ReportForm.php:74 src/Form/BiblioForm.php:87
+msgid "Published after"
+msgstr ""
+
+#: src/Form/ReportForm.php:85 src/Form/BiblioForm.php:98
+msgid "Published before"
 msgstr ""
 
 #: src/Form/BiblioFormConfigFieldset.php:182
@@ -103,11 +141,6 @@ msgstr ""
 
 #: src/Form/BiblioFormConfigFieldset.php:183
 msgid "Item set which contains texts written by Poincaré"
-msgstr ""
-
-#: src/Form/BiblioFormConfigFieldset.php:202
-#: src/Form/LetterFormConfigFieldset.php:213
-msgid "Item set id field"
 msgstr ""
 
 #: src/Form/BiblioFormConfigFieldset.php:225
@@ -140,14 +173,6 @@ msgstr ""
 
 #: src/Form/BiblioFormConfigFieldset.php:290
 msgid "Resource class field"
-msgstr ""
-
-#: src/Form/BiblioForm.php:87
-msgid "Published after"
-msgstr ""
-
-#: src/Form/BiblioForm.php:98
-msgid "Published before"
 msgstr ""
 
 #: src/Form/BiblioForm.php:144 src/Form/BiblioForm.php:147
