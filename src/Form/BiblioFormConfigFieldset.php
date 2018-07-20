@@ -169,7 +169,7 @@ class BiblioFormConfigFieldset extends Fieldset
 	private function itemSetFieldset() {
 		$fieldset = new Fieldset('itemset');
 		
-		// Pour choisir l’item set qui contient les lettres
+		// Pour choisir l’item set qui contient les biblio
 		$this->add([
 			'type' => ResourceSelect::class,
 			'name' => 'biblio_itemset',
