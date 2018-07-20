@@ -10,13 +10,6 @@ $this->headScript()->appendScript('$(document).ready(function () {
 			defaultDate: "1872-01-01",
 			changeYear: true, yearRange: "1862:1915" });
 		$(".chosen-select").chosen({allow_single_deselect: true, search_contains: true});
-		$("select[name=type]").change(function(){
-			var publishedInDiv = $("select[name=journal]").parent().parent().parent();
-			if(this.value.indexOf("Book") != -1)
-				publishedInDiv.hide();
-			else
-				publishedInDiv.show();
-		});
 	});',
 		'text/javascript');
 
@@ -78,13 +71,21 @@ $(document).ready(function() {
 	});
 });
 
+//To hide when Book is selected
+var publishedInDiv = $("select[name=journal]").parent().parent().parent();
+
 var hide_text=' <?= $this->translate('Hide advanced search') ?>';
 var show_text=' <?= $this->translate('Show advanced search') ?>';
 var is_hidden = true;
 function toggleAdvancedSearch() {
-	if(is_hidden) $(this).text(show_text).toggleClass('fa-minus-square fa-plus-square');
-	else $(this).text(hide_text).toggleClass('fa-minus-square fa-plus-square');
 	$('.ehp-fieldset').slice(1).toggle();
+	if(is_hidden) {
+		$(this).text(show_text).toggleClass('fa-minus-square fa-plus-square');
+		publishedInDiv.hide();
+	} else {
+		$(this).text(hide_text).toggleClass('fa-minus-square fa-plus-square');
+		$("select[name=type]").trigger('change'); //hide or show publishedIn
+	}
 	is_hidden = !is_hidden;
 }
 
@@ -112,5 +113,13 @@ $(document).ready(function() {
 	
 	//Hide/Show advanced search link
 	$('#advanced-toggle').on('click', toggleAdvancedSearch).trigger('click');
+	
+	//Hide publishedIn input if we select a book
+	$("select[name=type]").change(function(){
+		if(this.value.indexOf("Book") !== -1)
+			publishedInDiv.hide();
+		else
+			publishedInDiv.show();
+	});
 });
 </script>
