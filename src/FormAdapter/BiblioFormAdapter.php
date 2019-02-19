@@ -63,7 +63,7 @@ class BiblioFormAdapter implements FormAdapterInterface
 	 * @param array $formSettings Search page config from admin interface.
 	 * @return Query
 	 */
-	public function toQuery($data, $formSettings)
+	public function toQuery(array $data, array $formSettings)
 	{
 		$query = new Query();
 
